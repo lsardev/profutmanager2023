@@ -29,6 +29,8 @@ class Elenco:
 # times
 palmeiras = Elenco()
 flamengo = Elenco()
+fluminense = Elenco()
+botafogo = Elenco()
 
 #jogadores
 jogadores = []
@@ -147,6 +149,96 @@ jogadores.append(brunohenrique_flamengo)
 gabigol_flamengo = flamengo.Jogador("Flamengo", "Gabriel Barbosa", 10, "Centro Avante", 1500000, 100000000, "Brasileiro", 26, "31/12/2024", 110, 88, 82, 80, 56, 21, False, 7, "Null", "Null")
 jogadores.append(gabigol_flamengo)
 
+#Fluminense
+
+#Goleiros - fin, arm, cru, mar, des
+fabio_fluminense = fluminense.Jogador("Fluminense", "Fabio", 1, "Goleiro", 60000, 1000000, "Brasileiro", 42, "31/12/2023", 10, 10, 10, 10, 10, 77, False, 13, "Null", "Null")
+jogadores.append(fabio_fluminense)
+
+#laterais direitos
+samuelxavier_fluminense = fluminense.Jogador("Fluminense", "Samuel Xavier", 2, "Lateral Direito", 50000, 2500000, "Brasileiro", 33, "31/12/2024", 45, 69, 83, 83, 79, 10, False, 9, "Null", "Null")
+jogadores.append(samuelxavier_fluminense)
+
+#laterais esquerdos
+marcelo_fluminense = fluminense.Jogador("Fluminense", "Marcelo", 12, "Lateral Esquerdo", 600000, 9000000, "Brasileiro", 35, "31/12/2024", 55, 80, 90, 90, 80, 11, False, 15, "Null", "Null")
+jogadores.append(marcelo_fluminense)
+
+#zagueiros
+felipemelo_fluminense = fluminense.Jogador("Fluminense", "Felipe Melo", 30, "Zagueiro", 160000, 4000000, "Brasileiro", 40, "31/12/2024", 40, 65, 60, 70, 80, 60, False, 25, "Null", "Null")
+jogadores.append(felipemelo_fluminense)
+
+nino_fluminense = fluminense.Jogador("Fluminense", "Nino", 33, "Zagueiro", 200000, 35000000, "Brasileiro", 26, "31/12/2024", 50, 45, 60, 90, 90, 23, False, 4, "Null", "Null")
+jogadores.append(nino_fluminense)
+
+#volantes
+andre_fluminense = fluminense.Jogador("Fluminense", "André", 7, "Volante", 250000, 75000000, "Brasileiro", 22, "31/12/2026", 65, 65, 60, 105, 80, 12, False, 5, "Null", "Null")
+jogadores.append(andre_fluminense) 
+
+lima_fluminense = fluminense.Jogador("Fluminense", "Lima", 45, "Volante", 50000, 7500000, "Brasileiro", 27, "31/12/2025", 50, 68, 66, 80, 78, 10, False, 9, "Null", "Null")
+jogadores.append(lima_fluminense)
+
+#meia_armador
+ganso_fluminense = fluminense.Jogador("Fluminense", "P.H. Ganso", 10, "Meia Armador", 150000, 10000000, "Brasileiro", 33, "31/12/2025", 85, 94, 82, 40, 40, 30, False, 23, "Null", "Null")
+jogadores.append(ganso_fluminense)
+
+#ponta direita
+arias_fluminense = fluminense.Jogador("Fluminense", "John Arias", 21, "Ponta Direita", 90000, 45000000, "Colombiano", 25, "31/08/2026", 86, 90, 78, 50, 50, 10, False, 4, "Null", "Null")
+jogadores.append(arias_fluminense)
+
+#ponta esquerda
+keno_fluminense = fluminense.Jogador("Fluminense", "Keno", 11, "Ponta Esquerda", 150000, 8000000, "Brasileiro", 33, "31/12/2025", 78, 75, 84, 69, 45, 11, False, 8, "Null", "Null")
+jogadores.append(keno_fluminense)
+
+#centro avante - fin, arm, cru, mar, des
+cano_fluminense = fluminense.Jogador("Fluminense", "German Cano", 14, "Centro Avante", 200000, 12000000, "Brasileiro", 35, "31/12/2025", 105, 90, 83, 75, 60, 19, False, 8, "Null", "Null")
+jogadores.append(cano_fluminense)
+
+
+#Botafogo
+
+#goleiro
+gatito_botafogo = botafogo.Jogador("Botafogo", "Gatito Fernandez", 1, "Goleiro", 120000, 6000000, "Paraguaio", 35, "31/12/2024", 12, 12, 12, 12, 1, 74, False, 11, "Null", "Null")
+jogadores.append(gatito_botafogo)
+
+#lateral direito
+diplacido_botafogo = botafogo.Jogador("Botafogo", "Di Placido", 24, "Lateral Direito", 50000, 5000000, "Argentino", 29, "31/12/2023", 54, 65, 79, 80, 75, 11, False, 7, "Null", "Null")
+jogadores.append(diplacido_botafogo)
+
+#lateral esquerdo
+marcal_botafogo = botafogo.Jogador("Botafogo", "Marçal", 21, "Lateral Esquerdo", 40000, 5000000, "Brasileiro", 34, "31/12/2024", 40, 40, 72, 84, 77, 11, False, 14, "Null", "Null")
+jogadores.append(marcal_botafogo)
+
+#zagueiros
+victorcuesta_botafogo = botafogo.Jogador("Botafogo", "Victor Cuesta", 15, "Zagueiro", 160000, 5000000, "Argentino", 34, "31/12/2024", 50, 50, 50, 88, 92, 10, False, 12, "Null", "Null")
+jogadores.append(victorcuesta_botafogo)
+
+adryelson_botafogo = botafogo.Jogador("Botafogo", "Adryelson", 34, "Zagueiro", 100000, 30000000, "Brasileiro", 25, "31/12/2025", 50, 50, 65, 88, 96, 31, False, 2, "Null", "Null")
+jogadores.append(adryelson_botafogo)
+
+#volantes
+tchetche_botafogo = botafogo.Jogador("Botafogo", "Tche Tche", 6, "Volante", 90000, 9000000, "Brasileiro", 30, "31/12/2025", 60, 70, 65, 80, 70, 11, False, 6, "Null", "Null")
+jogadores.append(tchetche_botafogo)
+
+marlon_botafogo = botafogo.Jogador("Botafogo", "Marlon Freitas", 17, "Volante", 80000, 15000000, "Brasileiro", 28, "31/12/2025", 50, 73, 72, 77, 71, 10, False, 5, "Null", "Null")
+jogadores.append(marlon_botafogo)
+
+#meia armador
+eduardo_botafogo = botafogo.Jogador("Botafogo", "Carlos Eduardo", 33, "Meia Armador", 60000, 7500000, "Brasileiro", 33, "31/12/2025", 60, 75, 75, 69, 54, 11, False, 10, "Null", "Null")
+jogadores.append(eduardo_botafogo)
+
+#ponta direita
+segovia_botafogo = botafogo.Jogador("Botafogo", "Matias Segovia", 19, "Ponta Direita", 150000, 40000000, "Brasileiro", 20, "31/12/2026", 80, 85, 73, 56, 54, 10, False, 6, "Null", "Null")
+jogadores.append(segovia_botafogo)
+
+#ponta esquerda
+victorsa_botafogo = botafogo.Jogador("Botafogo", "Victor Sa", 7, "Ponta Esquerda", 70000, 9000000, "Brasileiro", 29, "31/12/2025", 83, 81, 77, 69, 56, 11, False, 5, "Null", "Null")
+jogadores.append(victorsa_botafogo)
+
+#centro avante
+tiquinho_botafogo = botafogo.Jogador("Botafogo", "Tiquinho Soares", 9, "Centro Avante", 90000, 20000000, "Brasileiro", 32, "31/12/2025", 90, 88, 78, 65, 60, 11, False, 9, "Null", "Null")
+jogadores.append(tiquinho_botafogo)
+
+
 def escalacao_titular(time):
     jogadores_do_time = []
 
@@ -186,7 +278,7 @@ def escalacao_titular(time):
 
     return [[goleiro[1], lateral_direito[2], lateral_esquerdo[2], primeiro_zagueiro[2], segundo_zagueiro[2], segundo_volante[2], primeiro_volante[2], meia_armador[-1], ponta_direita[-1], ponta_esquerda[-1], centro_avante[-1]], [meia_armador[0], ponta_esquerda[0], ponta_direita[0], centro_avante[0]]]
 
-print(escalacao_titular("Flamengo"))
+#print(escalacao_titular("Flamengo"))
 
 def ver_jogadores_do_time(time):
     elenco_time = []

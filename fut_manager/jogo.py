@@ -242,4 +242,4 @@ def copa_rio_sp_exemplo(seutime, time2, time3, time4):
 
 
 
-#copa_rio_sp_exemplo("Flamengo", "Palmeiras", "Botafogo", "Fluminense")
+copa_rio_sp_exemplo("Palmeiras", "Flamengo", "Botafogo", "Sao Paulo")

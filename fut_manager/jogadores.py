@@ -31,6 +31,10 @@ palmeiras = Elenco()
 flamengo = Elenco()
 fluminense = Elenco()
 botafogo = Elenco()
+saopaulo = Elenco()
+atleticomg = Elenco()
+corinthians = Elenco()
+athleticopr = Elenco()
 
 #jogadores
 jogadores = []
@@ -238,7 +242,107 @@ jogadores.append(victorsa_botafogo)
 tiquinho_botafogo = botafogo.Jogador("Botafogo", "Tiquinho Soares", 9, "Centro Avante", 90000, 20000000, "Brasileiro", 32, "31/12/2025", 90, 88, 78, 65, 60, 11, False, 9, "Null", "Null")
 jogadores.append(tiquinho_botafogo)
 
+#São Paulo
+#goleiro
+rafael_saopaulo = saopaulo.Jogador("Sao Paulo", "Rafael", 23, "Goleiro", 500000, 4000000, "Brasileiro", 34, "31/12/2025", 11, 11, 11, 11, 11, 76, False, 5, "Null", "Null")
+jogadores.append(rafael_saopaulo)
 
+#laterais
+rafinha_saopaulo = saopaulo.Jogador("Sao Paulo", "Rafinha", 13, "Lateral Direito", 300000, 2000000, "Brasileiro", 37, "31/12/2023", 66, 73, 90, 80, 70, 1, False, 22, "Null", "Null")
+jogadores.append(rafinha_saopaulo)
+
+caio_saopaulo = saopaulo.Jogador("Sao Paulo", "Caio Paulista", 38, "Lateral Esquerdo", 80000, 20000000, "Brasileiro", 25, "31/12/2023", 70, 80, 85, 89, 79, 2, False, 4, "Null", "Null")
+jogadores.append(caio_saopaulo)
+
+#zagueirpos
+beraldo_saopaulo = saopaulo.Jogador("Sao Paulo", "Beraldo", 35, "Zagueiro", 80000, 40000000, "Brasileiro", 19, "30/06/2026", 50, 75, 90, 90, 85, 1, False, 4, "Null", "Null")
+jogadores.append(beraldo_saopaulo)
+
+arboleda_saopaulo = saopaulo.Jogador("Sao Paulo", "Robert Arboleda", 5, "Zagueiro", 400000, 10000000, "Equatoriano", 31, "31/12/2024", 50, 60, 70, 100, 90, 23, False, 10, "Null", "Null")
+jogadores.append(arboleda_saopaulo)
+
+#volantes
+maia_saopaulo = saopaulo.Jogador("Sao Paulo", "Pablo Maia", 29, "Volante", 80000, 40000000, "Brasileiro", 21, "31/12/2027", 60, 70, 70, 90, 80, 1, False, 3, "Null", "Null")
+jogadores.append(maia_saopaulo)
+
+alisson_saopaulo = saopaulo.Jogador("Sao Paulo", "Alisson", 25, "Volante", 150000, 4000000, "Brasileiro", 30, "31/12/2024", 60, 75, 69, 90, 75, 33, False, 7, "Sim", "Gremio")
+jogadores.append(alisson_saopaulo)
+
+#meia armador
+luciano_saopaulo = saopaulo.Jogador("Sao Paulo", "Luciano", 10, "Meia Armador", 400000, 12500000, "Brasileiro", 30, "31/12/2024", 98, 95, 75, 85, 60, 3, False, 7, "Null", "Null")
+jogadores.append(luciano_saopaulo)
+
+#pontas
+rato_saopaulo = saopaulo.Jogador("Sao Paulo", "Wellington Rato", 27, "Ponta Direita", 300000, 5000000, "Brasileiro", 31, "31/12/2023", 75, 86, 88, 70, 50, 4, False, 8, "Null", "Null")
+jogadores.append(rato_saopaulo)
+
+nestor_saopaulo = saopaulo.Jogador("Sao Paulo", "Rodrigo Nestor", 11, "Ponta Esquerda", 130000, 35000000, "Brasileiro", 23, "28/02/2028", 80, 85, 85, 80, 50, 7, False, 7, "Null", "Null")
+jogadores.append(nestor_saopaulo)
+
+#centro avante
+calleri_saopaulo = saopaulo.Jogador("Sao Paulo", "Jonathan Calleri", 9, "Centro Avante", 700000, 25000000, "Argentino", 
+                                    29, "31/12/2025", 105, 80, 78, 70, 68, 21, False, 9, "Null", "Null")
+jogadores.append(calleri_saopaulo)
+
+#atletico mineiro
+#goleiro 
+everson_cam = atleticomg.Jogador("Atletico MG", "Everson", 22, "Goleiro", 520000, 20000000, "Brasileiro",
+                                 33, "31/12/2025", 1, 1, 1, 1, 1, 81, False, 9, "Null", "Null")
+jogadores.append(everson_cam)
+
+#laterais - fin arm cru mar des gol
+saravia_cam = atleticomg.Jogador("Atletico MG", "Saravia", 26, "Lateral Direito", 200000, 16000000, "Brasileiro", 
+                                 30, "31/12/2023", 65, 75, 88, 90, 84, 1, False, 7, "Null", "Null")
+jogadores.append(saravia_cam)
+
+arana_cam = atleticomg.Jogador("Atletico MG", "Guilherme Arana", 13, "Lateral Esquerdo", 450000, 50000000, "Brasileiro",
+                               26, "31/12/2024", 85, 90, 90, 75, 70, 22, False, 7, "Null", "Null")
+jogadores.append(arana_cam)
+
+#zagueiros
+rabello_cam = atleticomg.Jogador("Atletico MG", "Igor Rabello", 16, "Zagueiro", 280000, 12500000, "Brasileiro",
+                                 28, "31/12/2025", 50, 65, 60, 90, 86, 22, False, 7, "Null", "Null")
+jogadores.append(rabello_cam)
+
+jamerson_cam = atleticomg.Jogador("Atletico MG", "Jamerson", 34, "Zagueiro", 550000, 8500000, "Brasileiro",
+                                  30, "31/12/2024", 60, 50, 60, 98, 97, 15, False, 6, "Null", "Null")
+jogadores.append(jamerson_cam)
+
+#volantes
+battaglia_cam = atleticomg.Jogador("Atletico MG", "Rodrigo Battaglia", 21, "Volante", 250000, 7500000, "Brasileiro",
+                                   32, "31/12/2024", 60, 70, 65, 90, 80, 23, False, 8, "Null", "Null")
+jogadores.append(battaglia_cam)
+
+otavio_cam = atleticomg.Jogador("Atletico MG", "Otavio", 5, "Volante", 450000, 22500000, "Brasileiro",
+                                29, "30/06/2026", 75, 75, 69, 90, 69, 21, False, 7, "Null", "Null")
+jogadores.append(otavio_cam)
+
+#meia armador
+hyohan_cam = atleticomg.Jogador("Atletico MG", "Hyoran", 20, "Meia Armador", 220000, 12000000, "Brasileiro",
+                        30, "31/12/2023", 70, 80, 69, 65, 60, 32, False, 6, "Null", "Null")
+jogadores.append(hyohan_cam)
+
+#pontas
+pavon_cam = atleticomg.Jogador("Atletico MG", "Cristian Pavon", 9, "Ponta Direita", 1200000, 18000000, "Argentino",
+                       27, "30/06/2025", 88, 89, 79, 70, 60, 21, False, 7, "Null", "Null")
+
+jogadores.append(pavon_cam)
+
+paulinho_cam = atleticomg.Jogador("Atletico MG", "Paulinho", 10, "Ponta Esquerda", 1000000, 50000000, "Brasileiro",
+                                  23, "31/12/2026", 80, 90, 90, 60, 50, 32, False, 5, "Null", "Null")
+
+jogadores.append(paulinho_cam)
+
+#centro avante
+hulk_cam = atleticomg.Jogador("Atletico MG", "Hulk", 7, "Centro Avante", 1500000, 30000000, "Brasileiro",
+                              37, "31/12/2026", 105, 90, 86, 70, 70, 32, False, 8, "Null", "Null")
+jogadores.append(hulk_cam)
+
+#corinthians
+#goleiro
+cassio_sccp = corinthians.Jogador("Corinthians", "Cassio", 12, "Goleiro", 700000, 5000000, "Brasileiro",
+                                  36, "31/12/2024", 2, 3, 1, 3, 2, 80, False, 7, "Null", "Null")
+jogadores.append(cassio_sccp)
 
 def escalacao_titular(time):
     jogadores_do_time = []

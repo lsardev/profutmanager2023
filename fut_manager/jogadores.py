@@ -239,6 +239,7 @@ tiquinho_botafogo = botafogo.Jogador("Botafogo", "Tiquinho Soares", 9, "Centro A
 jogadores.append(tiquinho_botafogo)
 
 
+
 def escalacao_titular(time):
     jogadores_do_time = []
 
@@ -258,7 +259,7 @@ def escalacao_titular(time):
                     jogador_titular = jogador
                     ovr_titular = jogador.ovr
 
-        jogadores_do_time.remove(jogador_titular)
+                    jogadores_do_time.remove(jogador_titular)
 
         print(posicao_para_buscar + ": " + jogador_titular.nome + " "+ str(jogador_titular.ovr))
         return [jogador_titular.nome, jogador_titular.ovr, jogador_titular.des, jogador_titular.fin]

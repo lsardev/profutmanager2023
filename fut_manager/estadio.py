@@ -52,5 +52,5 @@ class Time:
 palmeiras = Time()
 EstadioAlianzParque = palmeiras.Estadio("43713", "7713", "21000", "14800", "200", "90", "150", "200", "500", "154000")
 
-print(EstadioAlianzParque.publico_e_renda("Pessima"))
+
 

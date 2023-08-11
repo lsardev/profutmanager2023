@@ -3,9 +3,15 @@ from random import randint
 from time import sleep
 
 print(jogadores.escalacao_titular("Palmeiras"))
+
 #Começo do jogo - Mostra escalação
-def jogar_jogo(time1, time2):
+def definir_time(time1):
     hometeam = jogadores.escolher_time_titular_4_3_3(time1)
+    return hometeam
+
+#começa partida
+def jogar_jogo(hometeam, time2):
+    #hometeam = jogadores.escolher_time_titular_4_3_3(time1)
     awayteam = jogadores.escalacao_titular(time2)
 
     return [hometeam, awayteam]
@@ -20,8 +26,8 @@ def simular_jogo(time1, time2):
     return [hometeam, awayteam]
 
 #envolvimento da partida
-def envolvimento_da_partida(time1, time2):
-    times_na_partida = jogar_jogo(time1, time2)
+def envolvimento_da_partida(time1, time2, hometeam):
+    times_na_partida = jogar_jogo(hometeam, time2)
 
     time1_defesa = times_na_partida[0][0][0] + times_na_partida[0][0][1] + times_na_partida[0][0][2] + times_na_partida[0][0][3] + times_na_partida[0][0][4] + times_na_partida[0][0][5] + times_na_partida[0][0][6]
     time2_defesa = times_na_partida[1][0][0] + times_na_partida[1][0][1] + times_na_partida[1][0][2] + times_na_partida[1][0][3] + times_na_partida[1][0][4] + times_na_partida[1][0][5] + times_na_partida[1][0][6]
@@ -40,7 +46,7 @@ def envolvimento_da_partida(time1, time2):
     gol_seu = 0
     gol_adversario = 0
 
-    for tempo in range(90):
+    for tempo in range(91):
         num = randint(0, int(randint_max_range_time_1*3))
         num2 = randint(0, int(randint_max_range_time2*3))
 
@@ -97,9 +103,20 @@ def envolvimento_da_partida(time1, time2):
             print("-"*30)
 
             sleep(2)
-        
 
-    print("{} {} x {} {}".format(time1, gol_seu, gol_adversario, time2))      
+    print("{} {} x {} {}".format(time1, gol_seu, gol_adversario, time2)) 
+
+    lista_com_time = []
+    if gol_seu > gol_adversario:
+        lista_com_time.append(time1)
+    elif gol_adversario > gol_seu:
+        lista_com_time.append(time2)
+    else:
+        print("Erro")
+        lista_com_time.append("Erro")
+
+    return lista_com_time[0]
+    
 
 #envolvimento da partida simulada
 def envolvimento_da_partida_simulada(time1, time2):
@@ -121,6 +138,7 @@ def envolvimento_da_partida_simulada(time1, time2):
 
     gol_seu = 0
     gol_adversario = 0
+    time_vencedor = ""
 
     for tempo in range(90):
         num = randint(0, int(randint_max_range_time_1*3))
@@ -170,30 +188,58 @@ def envolvimento_da_partida_simulada(time1, time2):
 
     print("{} {} x {} {}".format(time1, gol_seu, gol_adversario, time2)) 
 
+    if gol_seu > gol_adversario:
+        time_vencedor = time1
+    elif gol_adversario > gol_seu:
+        time_vencedor = time2
+
+    return time_vencedor
 
 #envolvimento_da_partida_simulada("Botafogo", "Fluminense")
 #placar final
 
 #simulando primeiro campeonato
-def copa_rio_sp(time1, time2, time3, time4):
+def copa_rio_sp_exemplo(seutime, time2, time3, time4):
+
+    sua_escalacao = definir_time(seutime)
+
+    time1 = seutime
 
     #sorteio
     times = [time1, time2, time3, time4]
 
-    time_sorteado_num = randint(0, 3)
-    primeiro_time_sorteado = times[time_sorteado_num]
-    times.remove(primeiro_time_sorteado)
+
+    primeiro_time = times[0]
+    times.remove(times[0])
 
     segundo_time_sorteado_num = randint(0, 2)
     segundo_time_sorteado = times[segundo_time_sorteado_num]
     times.remove(segundo_time_sorteado)
 
-    primeiro_time = primeiro_time_sorteado
     segundo_time = segundo_time_sorteado
     terceiro_time = times[0]
     quarto_time = times[-1]
 
+    print("-"*30)
+    print("Semifinais: ")
     print("Primeiro jogo: {} x {}".format(primeiro_time, segundo_time))
     print("Segundo Jogo: {} x {}".format(terceiro_time, quarto_time))
+    print("-"*30)
 
-copa_rio_sp("Flamengo", "Palmeiras", "Botafogo", "Fluminense")
+    vencedor_chave_um = envolvimento_da_partida(primeiro_time, segundo_time, sua_escalacao)
+    vencedor_chave_dois = envolvimento_da_partida_simulada(terceiro_time, quarto_time)
+
+    print("-"*30)
+    print("Times que passaram de fase")
+    print(vencedor_chave_um)
+    print(vencedor_chave_dois)
+    print("-"*30)
+
+    if vencedor_chave_um == seutime:
+        envolvimento_da_partida(vencedor_chave_um, vencedor_chave_dois, sua_escalacao)
+    elif vencedor_chave_dois == seutime:
+        envolvimento_da_partida(vencedor_chave_dois, vencedor_chave_um, sua_escalacao)
+
+
+
+#copa_rio_sp_exemplo("Flamengo", "Palmeiras", "Botafogo", "Fluminense")

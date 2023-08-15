@@ -31,6 +31,13 @@ palmeiras = Elenco()
 flamengo = Elenco()
 fluminense = Elenco()
 botafogo = Elenco()
+<<<<<<< Updated upstream
+=======
+saopaulo = Elenco()
+atleticomg = Elenco()
+corinthians = Elenco()
+internacional = Elenco()
+>>>>>>> Stashed changes
 
 #jogadores
 jogadores = []
@@ -78,7 +85,7 @@ jogadores.append(naves_palmeiras)
 gabrielmenino_palmeiras = palmeiras.Jogador("Palmeiras", "Gabriel Menino", 25, "Volante", 200000, 60000000, "Brasileiro", 22, "31/12/2025", 69, 74, 72, 69, 65, 15, False, 7, "Null", "Null")
 jogadores.append(gabrielmenino_palmeiras)
 
-zerafael_palmeiras = palmeiras.Jogador("Palmeiras", "Ze Rafael", 8, "Volante", 300000, 25000000, "Brasileiro", 30, "31/12/2025", 75, 75, 75, 75, 75, 21, False, 5, "Null", "Null")
+zerafael_palmeiras = palmeiras.Jogador("Palmeiras", "Ze Rafael", 8, "Volante", 300000, 25000000, "Brasileiro", 30, "31/12/2025", 70, 75, 73, 100, 80, 21, False, 5, "Null", "Null")
 jogadores.append(zerafael_palmeiras)
 
 richardrios_palmeiras = palmeiras.Jogador("Palmeiras", "Richard Rios", 23, "Volante", 150000, 20000000, "Colombiano", 23, "31/12/2025", 80, 68, 55, 87, 85, 10, False, 5, "Null", "Null")
@@ -238,6 +245,104 @@ jogadores.append(victorsa_botafogo)
 tiquinho_botafogo = botafogo.Jogador("Botafogo", "Tiquinho Soares", 9, "Centro Avante", 90000, 20000000, "Brasileiro", 32, "31/12/2025", 90, 88, 78, 65, 60, 11, False, 9, "Null", "Null")
 jogadores.append(tiquinho_botafogo)
 
+
+#laterais
+fagner_sccp = corinthians.Jogador("Corinthians", "Fagner", 23, "Lateral Direito", 700000, 4500000, "Brasileiro",
+                                  34, "31/12/2024", 63, 74, 84, 76, 73, 54, False, 10, "Null", "Null")
+jogadores.append(fagner_sccp)
+
+bidu_sccp = corinthians.Jogador("Corinthians", "Matheus Bidu", 21, "Lateral Esquerdo", 150000, 15000000, "Brasileiro",
+                                24, "31/12/2025", 50, 75, 84, 80, 75, 32, False, 5, "Null", "Null")
+jogadores.append(bidu_sccp)
+
+#zagueiros
+murillo_sccp = corinthians.Jogador("Corinthians", "Murillo", 34, "Zagueiro", 100000, 30000000, "Brasileiro",
+                                   21, "31/12/2025", 56, 49, 50, 98, 98, 3, False, 7, "Null", "Null")
+jogadores.append(murillo_sccp)
+
+brunomendez_sccp = corinthians.Jogador("Corinthians", "Bruno Mendez", 25, "Zagueiro", 250000, 25000000, "Uruguaio", 
+                                       23, "31/12/2023", 60, 50, 56, 94, 89, 33, False, 4, "Null", "Null")
+jogadores.append(brunomendez_sccp)
+
+#volantes
+faustovera_sccp = corinthians.Jogador("Corinthians", "Fausto Vera", 5, "Volante", 350000, 40000000, "Brasileiro",
+                                      23, "31/12/2026", 74, 70, 67, 93, 89, 4, False, 5, "Null", "Null")
+jogadores.append(faustovera_sccp)
+
+maycon_sccp = corinthians.Jogador("Corinthians", "Maycon", 7, "Volante", 550000, 27000000, "Brasileiro",
+                                  26, "31/12/2023", 72, 70, 67, 90, 90, 24, False, 9, "Null", "Null")
+jogadores.append(maycon_sccp)
+
+#meia armador
+renatoaugusto_sccp = corinthians.Jogador("Corinthians", "Renato Augusto", 8, "Meia Armador",800000, 10000000, "Brasileiro",
+                                         35, "31/12/2023", 95, 105, 95, 70, 50, 12, False, 20, "Null", "Null")
+jogadores.append(renatoaugusto_sccp)
+
+#pontas
+adson_sccp = corinthians.Jogador("Corinthians", "Adson", 28, "Ponta Direita", 180000, 30000000, "Brasileiro",
+                                 22, "31/12/2025", 80, 80, 74, 65, 54, 24, False, 6, "Null", "Null")
+jogadores.append(adson_sccp)
+
+biro_sccp = corinthians.Jogador("Corinthians", "Guilherme Biro", 26, "Ponta Esquerda", 60000, 30000000, "Brasileiro",
+                                19, "31/12/2027", 90, 85, 76, 60, 54, 12, False, 5, "Null", "Null")
+jogadores.append(biro_sccp)
+
+#centro avante
+yuri_sccp = corinthians.Jogador("Corinthians", "Yuri Alberto", 22, "Centro Avante", 1200000, 80000000, "Brasileiro",
+                                22, "31/12/2027", 97, 88, 88, 74, 50, 21, False, 3, "Null", "Null")
+jogadores.append(yuri_sccp)
+
+#interncaional
+#goleiro - fin arm cru mar des gol
+rochet_inter = internacional.Jogador("Internacional", "Sergio Rochet", 33, "Goleiro", 600000, 20000000, "Uruguaio",
+                                     30, "31/12/2026", 3, 3, 21, 21, 21, 82, False, 4, "Null", "Null")
+
+jogadores.append(rochet_inter)
+
+bustos_inter = internacional.Jogador("Internacional", "Fabricio Bustos", 16, "Lateral Direito", 400000, 30000000, "Argentino",
+                                     27, "31/12/2024", 58, 60, 90, 100, 87, 21, False, 7, "Null", "Null")
+jogadores.append(bustos_inter)
+
+rene_inter = internacional.Jogador("Internacional", "Rene", 6, "Lateral Esquerdo", 210000, 5000000, "Brasileiro",
+                                   30, "31/12/2024", 60, 55, 87, 85, 80, 21, False, 14, "Null", "Null")
+jogadores.append(rene_inter)
+
+#zagueiros
+vitao_inter = internacional.Jogador("Internacional", "Vitão", 44, "Zagueiro", 250000, 40000000, "Brasileiro",
+                                    23, "20/06/2024", 60, 53, 54, 97, 99, 24, False, 3, "Null", "Null")
+jogadores.append(vitao_inter)
+
+mercado_inter = internacional.Jogador("Internacional", "Gabriel Mercado", 35, "Zagueiro", 460000, 1000000, "Brasileiro", 
+                                      36, "31/12/2023", 67, 50, 54, 90, 86, 10, False, 28, "Null", "Null")
+jogadores.append(mercado_inter)
+
+#volantes
+aranguiz_inter = internacional.Jogador("Internacional", "Aranguiz", 20, "Volante", 600000, 15000000, "Chileno",
+                                 34, "30/06/2025", 75, 73, 67, 80, 79, 15, False, 14, "Null", "Null")
+jogadores.append(aranguiz_inter)
+
+pena_inter = internacional.Jogador("Internacional", "Carlos de Pena", 14, "Volante", 300000, 20000000, "Uruguaio",
+                                   31, "31/12/2024", 78, 78, 72, 90, 74, 12, False, 8, "Null", "Null")
+jogadores.append(pena_inter)
+
+#meia armador
+ap_inter = internacional.Jogador("Internacional", "Alan Patrick", 10, "Meia Armador", 1000000, 20000000, "Brasileiro",
+                                 32, "30/04/2025", 89, 90, 85, 70, 50, 34, False, 7, "Null", "Null")
+jogadores.append(ap_inter)
+
+#pontas
+mauricio_inter = internacional.Jogador("Internacional", "Mauricio", 27, "Ponta Direita", 150000, 40000000, "Brasileiro",
+                               22, "31/12/2027", 88, 94, 86, 70, 50, 19, False, 4, "Null", "Null")
+jogadores.append(mauricio_inter)
+
+wanderson_inter = internacional.Jogador("Internacional", "Wanderson", 11, "Ponta Esquerda", 600000, 22500000, "Brasileiro",
+                                28, "31/12/2025", 90, 90, 86, 65, 58, 12, False, 7, "Null", "Null")
+jogadores.append(wanderson_inter)
+
+#centro avante
+valencia_inter = internacional.Jogador("Internacional", "Enner Valencia", 13, "Centro Avante", 1100000, 20000000, "Brasileiro",
+                               33, "30/06/2026", 100, 80, 60, 78, 67, 32, False, 12, "Null", "Null")
+jogadores.append(valencia_inter)
 
 def escalacao_titular(time):
     jogadores_do_time = []

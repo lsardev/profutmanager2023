@@ -31,13 +31,10 @@ palmeiras = Elenco()
 flamengo = Elenco()
 fluminense = Elenco()
 botafogo = Elenco()
-<<<<<<< Updated upstream
-=======
 saopaulo = Elenco()
 atleticomg = Elenco()
 corinthians = Elenco()
 internacional = Elenco()
->>>>>>> Stashed changes
 
 #jogadores
 jogadores = []

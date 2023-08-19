@@ -3,12 +3,13 @@ from random import randint
 from time import sleep
 import pandas as pd
 
-<<<<<<< Updated upstream
-print(jogadores.escalacao_titular("Palmeiras"))
-=======
+def definir_time(time1):
+    hometeam = jogadores.escolher_time_titular_4_3_3(time1)
+    return hometeam
+
+#print(jogadores.escalacao_titular("Palmeiras"))
 #print(jogadores.escalacao_titular("Palmeiras"))
 
->>>>>>> Stashed changes
 #Começo do jogo - Mostra escalação
 def jogar_jogo(time1, time2):
     hometeam = jogadores.escolher_time_titular_4_3_3(time1)
@@ -26,8 +27,8 @@ def simular_jogo(time1, time2):
     return [hometeam, awayteam]
 
 #envolvimento da partida
-def envolvimento_da_partida(time1, time2):
-    times_na_partida = jogar_jogo(time1, time2)
+def envolvimento_da_partida(time1, time2, hometeam):
+    times_na_partida = jogar_jogo(hometeam, time2)
 
     time1_defesa = times_na_partida[0][0][0] + times_na_partida[0][0][1] + times_na_partida[0][0][2] + times_na_partida[0][0][3] + times_na_partida[0][0][4] + times_na_partida[0][0][5] + times_na_partida[0][0][6]
     time2_defesa = times_na_partida[1][0][0] + times_na_partida[1][0][1] + times_na_partida[1][0][2] + times_na_partida[1][0][3] + times_na_partida[1][0][4] + times_na_partida[1][0][5] + times_na_partida[1][0][6]
@@ -46,7 +47,7 @@ def envolvimento_da_partida(time1, time2):
     gol_seu = 0
     gol_adversario = 0
 
-    for tempo in range(90):
+    for tempo in range(91):
         num = randint(0, int(randint_max_range_time_1*3))
         num2 = randint(0, int(randint_max_range_time2*3))
 
@@ -103,11 +104,7 @@ def envolvimento_da_partida(time1, time2):
             print("-"*30)
 
             sleep(2)
-        
 
-<<<<<<< Updated upstream
-    print("{} {} x {} {}".format(time1, gol_seu, gol_adversario, time2))      
-=======
     print("{} {} x {} {}".format(time1, gol_seu, gol_adversario, time2)) 
 
     lista_com_time = []
@@ -115,16 +112,12 @@ def envolvimento_da_partida(time1, time2):
         lista_com_time.append(time1)
     elif gol_adversario > gol_seu:
         lista_com_time.append(time2)
-    elif gol_adversario == gol_seu:
-        lista_com_time.append("Empate")
     else:
         print("Erro")
         lista_com_time.append("Erro")
 
-    return [lista_com_time[0], gol_seu, gol_adversario]
+    return lista_com_time[0]
     
->>>>>>> Stashed changes
-
 #envolvimento da partida simulada
 def envolvimento_da_partida_simulada(time1, time2):
     times_na_partida = simular_jogo(time1, time2)
@@ -194,8 +187,6 @@ def envolvimento_da_partida_simulada(time1, time2):
 
     print("{} {} x {} {}".format(time1, gol_seu, gol_adversario, time2)) 
 
-<<<<<<< Updated upstream
-=======
     if gol_seu > gol_adversario:
         time_vencedor = time1
         gols_time_vencedor = gol_seu
@@ -212,8 +203,6 @@ def envolvimento_da_partida_simulada(time1, time2):
         gols_time_perdedor = gol_seu
 
     return [time_vencedor, gols_time_vencedor, gols_time_perdedor]
->>>>>>> Stashed changes
-
 #envolvimento_da_partida_simulada("Botafogo", "Fluminense")
 #placar final
 
@@ -238,24 +227,6 @@ def copa_rio_sp(time1, time2, time3, time4):
 
     print("Primeiro jogo: {} x {}".format(primeiro_time, segundo_time))
     print("Segundo Jogo: {} x {}".format(terceiro_time, quarto_time))
-
-<<<<<<< Updated upstream
-copa_rio_sp("Flamengo", "Palmeiras", "Botafogo", "Fluminense")
-=======
-    vencedor_chave_um = envolvimento_da_partida(primeiro_time, segundo_time, sua_escalacao)
-    vencedor_chave_dois = envolvimento_da_partida_simulada(terceiro_time, quarto_time)
-
-    print("-"*30)
-    print("Times que passaram de fase")
-    print(vencedor_chave_um)
-    print(vencedor_chave_dois)
-    print("-"*30)
-
-    if vencedor_chave_um == seutime:
-        envolvimento_da_partida(vencedor_chave_um, vencedor_chave_dois, sua_escalacao)
-    elif vencedor_chave_dois == seutime:
-        envolvimento_da_partida(vencedor_chave_dois, vencedor_chave_um, sua_escalacao)
-
 
 
 #copa_rio_sp_exemplo("Palmeiras", "Flamengo", "Botafogo", "Sao Paulo")
@@ -595,4 +566,3 @@ times = ["Palmeiras", "Corinthians", "Sao Paulo", "Flamengo", "Botafogo", "Flumi
 
 mini_temporada1(times)
 
->>>>>>> Stashed changes
